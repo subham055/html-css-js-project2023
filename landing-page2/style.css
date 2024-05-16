@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+
+#left{
+    width:40%;
+    height: 100%;
+    /* background-color: rgb(202, 184, 184); */
+    position: relative;
+}
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(3, 45, 45);
+}
+
+#rtop{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    display: flex;
+}
+
+#rbottom{
+    width: 100%;
+    height: 50%;
+    /* background-color: blueviolet; */
+    background-image: url(https://www.port-orange.org/ImageRepository/Document?documentID=11292);
+    background-size: cover;
+    background-position: top;
+}
+
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    /* background-color: aqua; */
+    background-image: url(https://kj1bcdn.b-cdn.net/media/64107/wp2202603.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-color: orange;
+    background-image: url("https://www.healthshots.com/wp-content/uploads/2020/10/winter-foods-oranges.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#lnav{
+    widows: 100%;
+    padding: 18px 30px;
+    background-color: rgb(64, 249, 187);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lnavr a {
+    margin-right: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#lnavr i{
+    font-size: 27px;
+    color: royalblue;
+}
+
+#left #textcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#textcenter h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+#textcenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    opacity: .7;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 500px) {
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
+/* @media screen and (max-width: 375px) and (min-width: 667px) {
+    #textcenter h1{
+        font-size: 60px;
+        font-weight: 900;
+        padding-top: 30px;
+    }
+} */
